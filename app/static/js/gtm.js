@@ -1,5 +1,4 @@
-<!-- Google Tag Manager -->
-<script>
+// Google Tag Manager
   (function(w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({
@@ -14,5 +13,4 @@
       'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
     f.parentNode.insertBefore(j, f);
   })(window, document, 'script', 'dataLayer', 'GTM-WBR4GHD');
-</script>
-<!-- End Google Tag Manager -->
+// End Google Tag Manager
