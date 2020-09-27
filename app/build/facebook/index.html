@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  
+  <title>SourceHub</title>
+  
+
+  <script type="text/javascript" src="/static/js/gtm.js"></script>
+
+</head>
+
+<body>
+
+
+  <div id="navbar">
+    <a href="/">Home</a>
+    <a href="/facebook">Facebook</a>
+  </div>
+
+  <hr>
+  
+
+<script type="text/javascript" src="/static/js/facebook.js"></script>
+
+<fb:login-button id="fb_login_button" scope="public_profile,email,pages_manage_posts" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div>
+  <select name="pages" id="pages__list">
+    <option value="choose-a-page">Choose a page</option>
+    <input type="submit" onClick="getPosts()">
+  </select>
+  <!-- <p>Can't find the page you're looking for? <a href="#">Recheck the permissions you gave SourceHub</a></p> -->
+</div>
+
+<div>
+  <table id="posts__table">
+    <thead>
+      <tr>
+        <th>Created at</th>
+        <th>Facebook URL</th>
+        <th>Outbound URL</th>
+        <th>utm_source</th>
+        <th>utm_medium</th>
+        <th>utm_campaign</th>
+        <th>utm_term</th>
+        <th>utm_content</th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <button id="more" onClick="getNext()">More</button>
+  <!-- <button id="export" onClick="getNext()">Export</button> -->
+</div>
+
+
+
+</body>
+
+</html>
