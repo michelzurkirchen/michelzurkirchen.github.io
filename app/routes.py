@@ -5,6 +5,6 @@ from app import app
 def home():
     return render_template("index.html")
 
-@app.route("/facebook")
+@app.route("/facebook/")
 def facebook_home():
     return render_template("facebook.html")
