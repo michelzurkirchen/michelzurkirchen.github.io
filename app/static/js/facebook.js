@@ -33,11 +33,9 @@ function statusChangeCallback(response) {
   if (response.status == 'connected') {
     authorised = true
     // Check for the right permissions
-    document.getElementById("fb_login_button").style.display = "none";
     getPages()
   } else {
     authorised = false;
-    document.getElementById("fb_login_button").style.display = "block";
     // Hide everything else until someone has logged in and given the right permissions
   }
 }
