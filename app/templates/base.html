@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  {% if title %}
+  <title>{{ title }} | SourceHub </title>
+  {% else %}
+  <title>SourceHub</title>
+  {% endif %}
+
+  {% include "/components/gtm.html" %}
+</head>
+
+<body>
+
+
+  <div id="navbar">
+    <a href="/">Home</a>
+    <a href="/facebook">Facebook</a>
+  </div>
+
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+
+</html>
