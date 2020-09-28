@@ -32,12 +32,19 @@ window.fbAsyncInit = function() {
 function statusChangeCallback(response) {
   if (response.status == 'connected') {
     authorised = true
+    document.getElementById('fb_login_button').style.display = 'none'
     // Check for the right permissions
     getPages()
   } else {
     authorised = false;
     // Hide everything else until someone has logged in and given the right permissions
   }
+}
+
+function initialLogin() {
+  FB.login(function(response) {
+  document.getElementById('fb_login_button').style.display = 'none'
+}, {scope: 'public_profile,email,pages_manage_posts'});
 }
 
 function checkLoginState() {

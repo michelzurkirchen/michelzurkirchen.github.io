@@ -4,8 +4,7 @@
 
 <script type="text/javascript" src="{{ url_for('static', filename= 'js/facebook.js') }}"></script>
 
-<fb:login-button id="fb_login_button" scope="public_profile,email,pages_manage_posts" onlogin="checkLoginState();">
-</fb:login-button>
+<button id="fb_login_button" onclick="initialLogin()">Login</button>
 
 <div>
   <select name="pages" id="pages__list">
